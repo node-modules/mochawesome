@@ -1,7 +1,7 @@
 /**
  * Export `register` hook
  * @example
- * $ mocha --require mochawesome/register tests
+ * $ mocha --require mochawesome-with-mocha/register tests
  *
  */
 module.exports = require('./src/register');
