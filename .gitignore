@@ -6,3 +6,4 @@ _site/
 coverage/
 .nyc_output/
 dist/
+package-lock.json

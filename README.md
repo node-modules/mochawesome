@@ -1,6 +1,6 @@
 # mochawesome
 
-[![npm](https://img.shields.io/npm/v/mochawesome.svg?style=flat-square)](http://www.npmjs.com/package/mochawesome) ![Node.js CI](https://github.com/adamgruber/mochawesome/workflows/Node.js%20CI/badge.svg) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat-square)](https://gitter.im/mochawesome/general)
+[![npm](https://img.shields.io/npm/v/mochawesome-with-mocha.svg?style=flat-square)](http://www.npmjs.com/package/mochawesome-with-mocha) ![Node.js CI](https://github.com/adamgruber/mochawesome/workflows/Node.js%20CI/badge.svg) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat-square)](https://gitter.im/mochawesome/general)
 
 Mochawesome is a custom reporter for use with the Javascript testing framework, [mocha][mocha]. It runs on Node.js (>=10) and works in conjunction with [mochawesome-report-generator][marge] to generate a standalone HTML/CSS report to help visualize your test runs.
 
@@ -24,17 +24,17 @@ Mochawesome is a custom reporter for use with the Javascript testing framework, 
 
 1. Add Mochawesome to your project:
 
-`npm install --save-dev mochawesome`
+`npm install --save-dev mochawesome-with-mocha`
 
 2. Tell mocha to use the Mochawesome reporter:
 
-`mocha testfile.js --reporter mochawesome`
+`mocha testfile.js --reporter mochawesome-with-mocha`
 
 3. If using mocha programatically:
 
 ```js
 var mocha = new Mocha({
-  reporter: 'mochawesome',
+  reporter: 'mochawesome-with-mocha',
 });
 ```
 
@@ -42,7 +42,7 @@ var mocha = new Mocha({
 
 Since `mocha@8` test files can be run in parallel using the `--parallel` flag. In order for mochawesome to work properly it needs to be registered as a hook.
 
-`mocha tests --reporter mochawesome --require mochawesome/register`
+`mocha tests --reporter mochawesome-with-mocha --require mochawesome-with-mocha/register`
 
 ### Output
 
@@ -90,14 +90,14 @@ _Note that environment variables must be in uppercase._
 You can pass comma-separated options to the reporter via mocha's `--reporter-options` flag. Options passed this way will take precedence over environment variables.
 
 ```bash
-$ mocha test.js --reporter mochawesome --reporter-options reportDir=customReportDir,reportFilename=customReportFilename
+$ mocha test.js --reporter mochawesome-with-mocha --reporter-options reportDir=customReportDir,reportFilename=customReportFilename
 ```
 
 Alternately, `reporter-options` can be passed in programatically:
 
 ```js
 var mocha = new Mocha({
-  reporter: 'mochawesome',
+  reporter: 'mochawesome-with-mocha',
   reporterOptions: {
     reportFilename: 'customReportFilename',
     quiet: true,
@@ -175,7 +175,7 @@ Context passed as an object must adhere to the following shape:
 Be sure to use ES5 functions and not ES6 arrow functions when using `addContext` to ensure `this` references the test object.
 
 ```js
-const addContext = require('mochawesome/addContext');
+const addContext = require('mochawesome-with-mocha/addContext');
 
 describe('test suite', function () {
   it('should add context', function () {
