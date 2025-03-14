@@ -1,3 +1,38 @@
+# Changelog
+
+## [8.0.0](https://github.com/node-modules/mochawesome/compare/v7.1.3...v8.0.0) (2025-03-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop Node.js < 18.19.0 support
+
+part of https://github.com/eggjs/egg/issues/3644
+
+https://github.com/eggjs/egg/issues/5257
+
+<!-- This is an auto-generated comment: release notes by coderabbit.ai
+-->
+## Summary by CodeRabbit
+
+- **New Features**
+  - Introduced an automated release process on main branch updates.
+- **Improvements**
+- Streamlined the CI testing process with enhanced Node.js version
+support.
+- Updated project documentation and branding to reflect the fork and new
+Mocha integration.
+- Upgraded platform requirements with a new Node.js engine specification
+and improved testing framework.
+- **Chores**
+  - Removed the automated npm publishing process.
+  - Refreshed license information to acknowledge current contributors.
+<!-- end of auto-generated comment: release notes by coderabbit.ai -->
+
+### Features
+
+* use mocha@11 ([#2](https://github.com/node-modules/mochawesome/issues/2)) ([8b90ade](https://github.com/node-modules/mochawesome/commit/8b90ade2c726d45f0df025d1c83bfb45ba54411d))
+
 # mochawesome changelog
 
 ## [Unreleased]
