@@ -11,7 +11,7 @@
     "test:mem": "mocha test-functional/mem-test.js --config test-functional/.mocharc.json",
     "test:ctx": "mocha test-functional/test-context.js --config test-functional/.mocharc.json",
     "tdd": "npm run lint && cross-env NODE_ENV=test nyc mocha --config test/.mocharc.json --watch",
-    "prepack": "npm run test"
+    "ci": "npm run test"
   },
   "author": "Adam Gruber",
   "license": "MIT",
@@ -47,6 +47,9 @@
     "functions": 100,
     "branches": 90
   },
+  "engines": {
+    "node": ">=18.19.0"
+  },
   "dependencies": {
     "chalk": "^4.1.2",
     "diff": "^5.0.0",
@@ -55,7 +58,7 @@
     "lodash.isfunction": "^3.0.9",
     "lodash.isobject": "^3.0.2",
     "lodash.isstring": "^4.0.1",
-    "mocha": "^10.2.0",
+    "mocha": "^11.1.0",
     "mochawesome-report-generator": "^6.2.0",
     "strip-ansi": "^6.0.1",
     "uuid": "^8.3.2"

@@ -1,8 +1,11 @@
-# mochawesome
+# mochawesome-with-mocha
 
-[![npm](https://img.shields.io/npm/v/mochawesome-with-mocha.svg?style=flat-square)](http://www.npmjs.com/package/mochawesome-with-mocha) ![Node.js CI](https://github.com/adamgruber/mochawesome/workflows/Node.js%20CI/badge.svg) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat-square)](https://gitter.im/mochawesome/general)
+[![npm](https://img.shields.io/npm/v/mochawesome-with-mocha.svg?style=flat-square)](http://www.npmjs.com/package/mochawesome-with-mocha)
+[![Node.js CI](https://github.com/node-modules/mochawesome/actions/workflows/nodejs.yml/badge.svg?branch=master)](https://github.com/node-modules/mochawesome/actions/workflows/nodejs.yml)
 
 Mochawesome is a custom reporter for use with the Javascript testing framework, [mocha][mocha]. It runs on Node.js (>=10) and works in conjunction with [mochawesome-report-generator][marge] to generate a standalone HTML/CSS report to help visualize your test runs.
+
+> Forked [mochawesome](https://github.com/adamgruber/mochawesome) add mocha to dependencies.
 
 ## Features
 
@@ -241,5 +244,4 @@ mochawesome is [MIT licensed][license].
 [mocha]: https://mochajs.org/
 [marge]: https://github.com/adamgruber/mochawesome-report-generator
 [marge-options]: https://github.com/adamgruber/mochawesome-report-generator#options
-[changelog]: CHANGELOG.md
 [license]: LICENSE.md
