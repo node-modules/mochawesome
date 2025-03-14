@@ -1,6 +1,7 @@
 MIT License
 
 Copyright (c) 2015-2017 Adam Gruber
+Copyright (c) 2023-present node-modules and the contributors.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
